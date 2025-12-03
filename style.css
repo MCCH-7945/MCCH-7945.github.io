@@ -1,0 +1,148 @@
+:root {
+  --bg: #0f172a;
+  --bg-light: #111827;
+  --accent: #38bdf8;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --card: #111827;
+  --border: #1f2937;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617 60%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  margin-bottom: 1rem;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #020617;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 40px rgba(56, 189, 248, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.7);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.card a {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+#contacto ul {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+#contacto li {
+  margin-bottom: 0.4rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malik Corvera | Data Science Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Página personal de Malik Corvera, estudiante de ciencia de datos." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span class="accent">Malik Corvera</span></h1>
+      <p>Estudiante de Ciencia de Datos interesado en estadística, machine learning y proyectos con impacto real.</p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+    <main>
+      <section id="sobre-mi" class="section">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy estudiante de ciencia de datos en una universidad de alto rendimiento. Me gustan los proyectos que combinan
+          programación, estadística y negocio, especialmente en temas de finanzas, medio ambiente y astronomía.
+        </p>
+      </section>
+
+      <section id="proyectos" class="section">
+        <h2>Proyectos destacados</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Proyecto 1: Análisis de datos</h3>
+            <p>
+              Breve descripción del proyecto (dataset, objetivo, herramientas). Aquí podrías poner un link al repo de GitHub
+              del proyecto.
+            </p>
+            <a href="https://github.com/<tu-usuario>/nombre-del-repo" target="_blank" rel="noopener noreferrer">
+              Ver en GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Proyecto 2: Machine Learning</h3>
+            <p>
+              Breve descripción de un modelo de ML que hayas implementado: clasificación, regresión, clustering, etc.
+            </p>
+            <a href="https://github.com/<tu-usuario>/otro-repo" target="_blank" rel="noopener noreferrer">
+              Ver en GitHub
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Proyecto 3: Proyecto personal</h3>
+            <p>
+              Puede ser algo más creativo: visualizaciones, una app sencilla, un script útil, etc.
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Más detalles
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Si quieres platicar sobre proyectos, colaboraciones o ajedrez:</p>
+        <ul>
+          <li>Email: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/<tu-usuario>" target="_blank" rel="noopener noreferrer">@<tu-usuario></a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">Tu LinkedIn</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Tu Nombre. Construido con ❤️ y GitHub Pages.</p>
+    </footer>
+
+    <script>
+      // Año automático en el footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
